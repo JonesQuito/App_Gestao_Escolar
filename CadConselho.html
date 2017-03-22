@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Orgão Colegiado</title>
+      <style>
+          span.hot{
+              font-size: 20px;
+              text-decoration: underline;
+              font-weight: bolder;
+              color:red;
+              
+          }
+      </style>
+    
+  </head>
+  <body>
+          
+    <TABLE BORDER=1 BGCOLOR="blue" width="100%">
+      <TH ><font color="white">Cadastro de Conselho</font></TH>
+     </TABLE>
+     <!--
+     <input type="button" value="Imprimir Pagina" onMouseDown="self.print()">
+     <P onMouseDown='self.print()'">Imprimir Documento</p>
+      
+      <span class="hot">A</span>rquivo / <span class="hot">E</span>ditar / <span class="hot">S</span>air
+     -->
+     <form name="form_conselho" method="POST" action="mailto:jonesdhy@hotmail.com">
+      <h4>Programa</h4>
+      <table width="100%">
+      
+        <tr>
+          <td width="15%"><font size="3" face="Arial">Unidade</font></td>
+          <!--<p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome completo"/></p>-->
+          <td><input type="text" id="CodUNI" name="CodUnidade" size="5"/></td>
+          <td><input type="text" name="unidade" size="80"></td>
+        </tr>
+        <tr>
+          <td width="15%"><font size="3" face="Arial">Programa</font></td>
+          <td><input type="text" name="CodPrograma" size="5"></td>
+          <td><input type="text" name="programa" size="80"></td>
+        </tr>
+      </table>
+      <h4>Conselho de Programa de Pós-Graduação</h4>
+      
+      <table width="100%">
+      
+        <tr>
+          <td width="15%"><font size="3" face="Arial">Código</font></td>
+          <td><input type="text" name="codigo" size="5"></td>
+        </tr>
+        
+        <tr>
+          <td width="15%"><font size="3" face="Arial">Nome</font></td>
+          <td><input type="text" name="nome" size="100"></td>
+        </tr>
+        
+        <tr>
+          <td width="15%"><font size="3" face="Arial">Tipo</font></td>
+          <td>
+            <select name="tipo">
+              <option>
+              <option value="1"> COMISSÕES TRASITORIAS DE ESTUDOS
+              <option value="2"> CONSELHOS DE DEPARTAMENTO
+              <option value="3"> COMISSÕES PERMANENTES DE UNIDADES ADM.
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td width="15%"><font size="3" face="arial">Fundamentos</font></td>
+          <td><textarea name="fundamento" cols=50 rows=3></textarea></td>
+        </tr>
+        
+        <tr>
+            <td align="center" colspan="2"><input type="submit" value="Salvar"/></td>
+        </tr>
+        
+      </table>
+      
+     </form>
+  </body>
+</html>
