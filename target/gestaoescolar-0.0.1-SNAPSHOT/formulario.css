@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+body{
+	font-family: sans-serif;
+}
+
+body h1{
+	text-align: center;
+	font-size: 20pt;
+	color: #006699;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px blue;
+	margin-bottom: 0px;
+}
+form.formulario{
+	position: relative;
+	width: 70%; /*estava em 450px*/
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+
+.formulario input{     
+    border: 0.5px solid rgba(0,0,0,.2);
+    border-radius:4px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+    font-size: 14pt;
+}
+
+.formulario input:hover{
+	box-shadow: 0px 0px 10px blue;
+}
+
+.formulario select{
+	border: 0.5px solid rgba(0,0,0,.2);
+    border-radius:4px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+    font-size: 14pt;
+} 
+
+/********************* FORMATAÇÃO DE BOTÕES *************************/
+input.botao{
+	background:#006699;
+    color:#ffffff;
+    border-radius: 3px;
+    padding: 4px;
+    font-size: 12pt;
+    font-weight: bolder;
+}
+input.botao-pequeno{
+	background:#006699;
+    color:#ffffff;
+    border-radius: 3px;
+    padding: 3px;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+
+/*FORMATAÇÃO DA TABELA DE FORMULÁRIOS --> esse CSS alinha a tabela com formulário no centro da página*/
+.formulario table{
+	margin: auto;
+}
